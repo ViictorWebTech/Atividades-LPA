@@ -1,0 +1,25 @@
+package A_Introducao_Ex6;
+
+
+public class Pes {
+    
+    private double pes1, p , j, m;
+    
+    public String calculaPes(double pes1){
+        
+        this.pes1 = pes1;
+        
+        this.p = pes1 * 12;
+
+        this.j = p/3;
+        
+        this.m = j/1760;
+        
+        return "O número de polegadas é: " + this.p + 
+                "\n O número de jardas é: " + this.j + "\n O número de milhas é: " + this.m ;
+        
+        
+        
+    }
+    
+}//Fecha classe

@@ -1,0 +1,19 @@
+package A_Introducao_Ex6;
+
+import javax.swing.JOptionPane;
+
+public class Pes_Principal {
+    
+    public static void main(String[] args) {
+        
+        Pes pes = new Pes();
+        
+        double pes1 = Double.parseDouble(JOptionPane.showInputDialog("Informe o número de pés: "));
+        
+        
+        JOptionPane.showMessageDialog(null, pes.calculaPes(pes1));
+                                                                                                                                                                     
+        
+    }
+    
+}
