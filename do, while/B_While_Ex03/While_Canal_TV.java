@@ -43,7 +43,7 @@ public class While_Canal_TV {
                 "\nO número de audiência do canal 12 é de: " + canal_12 +
                 "\nO número de audiência do canal 23 é de: " + canal_23 +
                 "\nO número de audiência do canal 40 é de: " + canal_40 +
-                "\nO número de audiência do canal 40 é de: " + outro;
+                "\nO número de audiência de outros canais é de: " + outro;
 
     }
 }
