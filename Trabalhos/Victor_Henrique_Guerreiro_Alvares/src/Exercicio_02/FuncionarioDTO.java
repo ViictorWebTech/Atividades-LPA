@@ -3,6 +3,7 @@ package Exercicio_02;
 public class FuncionarioDTO extends PessoaDTO{
     private String siape, funcao;
 
+
     public String getSiape() {
         return siape;
     }
@@ -18,8 +19,5 @@ public class FuncionarioDTO extends PessoaDTO{
     public void setFuncao(String funcao) {
         this.funcao = funcao;
     }
-
-
-
 
 }

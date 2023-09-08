@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
 public class ClienteVIEW {
     public static void main(String[] args){
         try{
-            JOptionPane.showMessageDialog(null, "Vamos trabalhar com o objeto fisico.");
+            JOptionPane.showMessageDialog(null, "Vamos trabalhar com o Cliente Físico.");
             FisicoDTO fisicoDTO = new FisicoDTO();
             FisicoDAO fisicoDAO = new FisicoDAO();
             FisicoCTR fisicoCTR = new FisicoCTR();
@@ -20,11 +20,10 @@ public class ClienteVIEW {
             fisicoDTO.setCpf(JOptionPane.showInputDialog("Informe o CPF: "));
             fisicoDTO.setRg(JOptionPane.showInputDialog("Informe o RG: "));
 
-            JOptionPane.showMessageDialog(null, fisicoCTR.mostrarDadosCli(fisicoDTO));
-            JOptionPane.showMessageDialog(null, fisicoCTR.mostrarDadosFisi(fisicoDTO));
+            JOptionPane.showMessageDialog(null, fisicoCTR.mostrarDadosCliFi(fisicoDTO));
 
             /*                     Separação dos objetos                         **/
-            JOptionPane.showMessageDialog(null, "Vamos trabalhar com o objeto juridico.");
+            JOptionPane.showMessageDialog(null, "Vamos trabalhar com o Cliente Jurídico.");
             JuridicoDTO juridicoDTO = new JuridicoDTO();
             JuridicoDAO juridicoDAO = new JuridicoDAO();
             JuridicoCTR juridicoCTR = new JuridicoCTR();
@@ -38,8 +37,7 @@ public class ClienteVIEW {
             juridicoDTO.setCnpj(JOptionPane.showInputDialog("Informe o CNPJ: "));
             juridicoDTO.setIe(JOptionPane.showInputDialog("Informe a IE: "));
 
-            JOptionPane.showMessageDialog(null, juridicoCTR.mostrarDadosCli(juridicoDTO));
-            JOptionPane.showMessageDialog(null, juridicoCTR.mostrarDadosJuri(juridicoDTO));
+            JOptionPane.showMessageDialog(null, juridicoCTR.mostrarDadosCliJuri(juridicoDTO));
         }
         catch(Exception e){
             JOptionPane.showMessageDialog(null, "Erro no sistema");
