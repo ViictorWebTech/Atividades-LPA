@@ -4,10 +4,7 @@ public class AlunoCTR {
     AlunoDAO alunoDAO = new AlunoDAO();
 
 
-    public String mostrarDadosPesso(AlunoDTO alunoDTO){
-        return alunoDAO.mostrarDadosPesso(alunoDTO);
-    }
-    public String mostrarDadosAlu(AlunoDTO alunoDTO){
-        return alunoDAO.mostrarDadosAlu(alunoDTO);
+    public String mostrarDadosPessoAlu(AlunoDTO alunoDTO){
+        return alunoDAO.mostrarDadosPesso(alunoDTO) + alunoDAO.mostrarDadosAlu(alunoDTO);
     }
 }
